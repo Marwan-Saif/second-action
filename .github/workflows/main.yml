@@ -1,0 +1,24 @@
+
+  on:
+    push:
+      branches:
+        - master
+
+
+
+
+  jobs:
+    build:
+      runs-on:  ubuntu-latest
+      
+      steps:
+        - name: 'before'
+          run: ls
+        
+        - name:  'actions/checkout@v3'
+        
+        - name: 'after'
+          run: ls
+        # - name: 'Testing printing'
+        #   run: echo marwan
+
